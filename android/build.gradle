@@ -1,4 +1,4 @@
-group 'com.erluxman.pdf_flutter'
+group 'br.com.scrumlab.scrumlab_pdf_flutter'
 version '1.0'
 
 buildscript {

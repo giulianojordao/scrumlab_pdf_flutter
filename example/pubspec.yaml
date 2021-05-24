@@ -1,5 +1,5 @@
-name: pdf_flutter_example
-description: Demonstrates how to use the pdf_flutter plugin.
+name: scrumlab_pdf_flutter_example
+description: Demonstrates how to use the scrumlab_pdf_flutter plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 0.0.1
 
@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  file_picker: ^3.0.0
-  pdf_flutter:
+  file_picker: ^3.0.1
+  scrumlab_pdf_flutter:
     path: ../
 
 dev_dependencies:

@@ -1,8 +1,8 @@
-name: pdf_flutter
+name: scrumlab_pdf_flutter
 description: Displaying PDF from Network, File and assets easily like we display
   Image in Flutter Widget.
-version: 1.2.0
-homepage: https://github.com/erluxman/pdf_flutter
+version: 1.2.0-nullsafety.0
+homepage: https://github.com/giulianojordao/scrumlab_pdf_flutter
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.0.0-nullsafety.1
-  http: ^0.13.0
+  flutter_cache_manager: ^3.0.2
+  http: ^0.13.3
   path_provider: ^2.0.1
 
 dev_dependencies:
@@ -24,7 +24,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.erluxman.pdf_flutter
+        package: br.com.scrumlab.scrumlab_pdf_flutter
         pluginClass: PdfFlutterPlugin
       ios:
         pluginClass: PdfFlutterPlugin

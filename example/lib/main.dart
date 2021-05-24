@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:pdf_flutter/pdf_flutter.dart';
+import 'package:scrumlab_pdf_flutter/scrumlab_pdf_flutter.dart';
 
 void main() => runApp(PdfApp());
 
@@ -12,7 +12,7 @@ class PdfApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('pdf_flutter demo'),
+          title: const Text('scrumlab_pdf_flutter demo'),
         ),
         body: PDFListBody(),
       ),
@@ -63,8 +63,7 @@ class _PDFListBodyState extends State<PDFListBody> {
             builder: (context) {
               return ElevatedButton(
                 onPressed: () async {
-                  final file = await FilePicker.platform.pickFiles(
-                      allowedExtensions: ['pdf'], type: FileType.custom);
+                  final file = await FilePicker.platform.pickFiles(allowedExtensions: ['pdf'], type: FileType.custom);
                   if (file?.files[0].path != null) {
                     _navigateToPage(
                       title: 'PDF from file',

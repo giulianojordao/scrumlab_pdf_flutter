@@ -1,4 +1,4 @@
-package com.erluxman.pdf_flutter;
+package br.com.scrumlab.scrumlab_pdf_flutter;
 
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
@@ -8,6 +8,6 @@ public class PdfFlutterPlugin {
     registrar
             .platformViewRegistry()
             .registerViewFactory(
-                    "pdf_flutter_plugin", new PdfFlutterFactory(registrar.messenger()));
+                    "scrumlab_pdf_flutter_plugin", new PdfFlutterFactory(registrar.messenger()));
   }
 }

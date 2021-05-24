@@ -29,11 +29,7 @@ class PDF extends StatefulWidget {
     double height = double.maxFinite,
     Widget? placeHolder,
   }) {
-    return PDF._(
-        networkURL: url,
-        width: width,
-        height: height,
-        placeHolder: placeHolder);
+    return PDF._(networkURL: url, width: width, height: height, placeHolder: placeHolder);
   }
 
   /// Load PDF from network
@@ -62,11 +58,7 @@ class PDF extends StatefulWidget {
     double height = double.maxFinite,
     Widget? placeHolder,
   }) {
-    return PDF._(
-        assetsPath: assetPath,
-        width: width,
-        height: height,
-        placeHolder: placeHolder);
+    return PDF._(assetsPath: assetPath, width: width, height: height, placeHolder: placeHolder);
   }
 
   final String? networkURL;
@@ -98,16 +90,14 @@ class _PDFState extends State<PDF> {
         final splitLength = widget.networkURL!.split('/').length;
         input = widget.networkURL!.split('/')[splitLength - 1];
       } else {
-        debugPrint(
-            'Cannot get filename because networkURL and assetsPath is null.');
+        debugPrint('Cannot get filename because networkURL and assetsPath is null.');
       }
     }
     final result = input.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '');
     return result;
   }
 
-  Future<File> writeCounter(Uint8List stream) async =>
-      (await _localFile).writeAsBytes(stream);
+  Future<File> writeCounter(Uint8List stream) async => (await _localFile).writeAsBytes(stream);
 
   Future<bool> existsFile() async => (await _localFile).exists();
 
@@ -138,8 +128,7 @@ class _PDFState extends State<PDF> {
   }
 
   Future<void> loadNetworkPDF() async {
-    final fetchedFile =
-        await DefaultCacheManager().getSingleFile(widget.networkURL!);
+    final fetchedFile = await DefaultCacheManager().getSingleFile(widget.networkURL!);
     await (writeCounter(fetchedFile.readAsBytesSync()));
     path = (await _localFile).path;
   }
@@ -212,7 +201,7 @@ class _PdfViewerState extends State<PdfViewer> {
   Widget build(BuildContext context) {
     if (defaultTargetPlatform == TargetPlatform.android) {
       return AndroidView(
-        viewType: 'pdf_flutter_plugin',
+        viewType: 'scrumlab_pdf_flutter_plugin',
         creationParams: <String, dynamic>{
           'filePath': widget.filePath,
         },
@@ -221,7 +210,7 @@ class _PdfViewerState extends State<PdfViewer> {
       );
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       return UiKitView(
-        viewType: 'pdf_flutter_plugin',
+        viewType: 'scrumlab_pdf_flutter_plugin',
         creationParams: <String, dynamic>{
           'filePath': widget.filePath,
         },

@@ -1,6 +1,6 @@
-# pdf_flutter_example
+# scrumlab_pdf_flutter_example
 
-Demonstrates how to use the pdf_flutter plugin.
+Demonstrates how to use the scrumlab_pdf_flutter plugin.
 
 ## Demo
-![pdf_flutter_demo](../art/pdf_flutter_updated.gif)
+![scrumlab_pdf_flutter_demo](../art/scrumlab_pdf_flutter_updated.gif)

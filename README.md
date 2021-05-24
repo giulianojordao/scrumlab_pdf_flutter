@@ -1,13 +1,13 @@
-# pdf_flutter
-[![pub package](https://img.shields.io/pub/v/pdf_flutter.svg)](https://pub.dartlang.org/packages/pdf_flutter)
+# scrumlab_pdf_flutter
+[![pub package](https://img.shields.io/pub/v/scrumlab_pdf_flutter.svg)](https://pub.dartlang.org/packages/scrumlab_pdf_flutter)
 
 Inspired by [Pdf_Viewer_Plugin](https://github.com/lubritto/Pdf_Viewer_Plugin) 😇
 Wrapped around [AndroidPdfViewer](https://github.com/barteksc/AndroidPdfViewer) on Android. 🙏🏼
 
-### 1. Add `pdf_flutter`on `pubspec.yml` 
+### 1. Add `scrumlab_pdf_flutter`on `pubspec.yml` 
 
     dependencies:
-      pdf_flutter: ^version
+      scrumlab_pdf_flutter: ^version
 
 ### 2. On iOS enable PDF preview like this:
 
@@ -61,4 +61,4 @@ Add this on `ios/Runner/info.plist`:
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
 ## Demo           
-![demo](art/pdf_flutter_updated.gif)
+![demo](art/scrumlab_pdf_flutter_updated.gif)

@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint pdf_flutter.podspec' to validate before publishing.
+# Run `pod lib lint scrumlab_pdf_flutter.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'pdf_flutter'
+  s.name             = 'scrumlab_pdf_flutter'
   s.version          = '0.0.1'
   s.summary          = 'PDF loading Widget for Flutter'
   s.description      = <<-DESC

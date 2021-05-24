@@ -1,4 +1,4 @@
-package com.erluxman.pdf_flutter;
+package br.com.scrumlab.scrumlab_pdf_flutter;
 
 import android.content.Context;
 

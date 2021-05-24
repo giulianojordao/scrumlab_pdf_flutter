@@ -1,4 +1,4 @@
-package com.erluxman.pdf_flutter_example;
+package br.com.scrumlab.scrumlab_pdf_flutter_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 
