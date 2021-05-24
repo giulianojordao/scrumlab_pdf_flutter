@@ -1,3 +1,4 @@
+#### 1.2.1-nullsafety.0 NullSafety Migration java Fixed
 #### 1.2.0-nullsafety.0 NullSafety Migration
 #### 1.1.4  Upgrade dependencies
 #### 1.1.3  Fixing bug on release mode

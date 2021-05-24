@@ -11,3 +11,4 @@ public class PdfFlutterPlugin {
                     "scrumlab_pdf_flutter_plugin", new PdfFlutterFactory(registrar.messenger()));
   }
 }
+© 2021 GitHub, Inc.
